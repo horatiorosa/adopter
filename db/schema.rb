@@ -38,4 +38,5 @@ ActiveRecord::Schema.define(version: 20150602185449) do
     t.datetime "image3_updated_at"
   end
 
+
 end

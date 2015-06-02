@@ -1,10 +1,11 @@
 class DogsController < ApplicationController
 
   def index
+    @dog = Dog.all
   end
 
   def new
-  	@dog = Dog.all
+  	@dog = Dog.new
   end
 
   def show

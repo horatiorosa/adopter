@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   devise_for :views
 
-  get 'welcome/index'
+  get 'welcome/index', to: 'welcome#index', as: 'welcome'
+  get 'welcome/about', to: 'welcome#about', as: 'about'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

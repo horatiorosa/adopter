@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ *= require_self
+ */
+@import "bourbon";
+@import "home";
+@import "users";
+@import "neat/neat";
+@import "base/base";
+
+
+
+$grid-columns: 12 !default;
+$max-width: em(1088) !default;
+
+.wrapper {
+@include outer-container;
+.primary { @include span-columns(8); }
+.secondary { @include span-columns(4); }
+}
+
+body {
+	background-color: #5882FA;
+}
+
+.wrapper {
+	background-color: #A9F5F2;
+}
+
+.primary, .secondary {
+	background-color: #c2e79a;
+}
+
+
+// Image asset with a linear-gradient
+@include background-image(url("/images/a.png"), linear-gradient(white 0, yellow 50%, transparent 50%));
+
+// Multiple linear-gradients - Demo
+@include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 50%, transparent 50%),
+                           linear-gradient(#4e7ba3, darken(#4e7ba4, 10%)));
+
+// NOT SUPPORTED
+@include background-image(url("/images/a.png") center no-repeat, url("images/b.png") left repeat);
+
+// Background-image is not a shorthand property, therefore this doesn't make sense.

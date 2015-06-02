@@ -1,17 +1,18 @@
 Rails.application.routes.draw do
-  get 'dogs/index'
 
-  get 'dogs/new'
+resources :dogs
 
-  get 'dogs/show'
+  devise_for :views
+  get 'welcome/index'
 
-  get 'dogs/edit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+
+  root 'welcome#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  animal_type: MyString
+  breed: MyString
+  sex: MyString
+  size: MyString
+  age: MyString
+  description: MyText
+  location: MyString
+  http: MyString
+
+two:
+  animal_type: MyString
+  breed: MyString
+  sex: MyString
+  size: MyString
+  age: MyString
+  description: MyText
+  location: MyString
+  http: MyString

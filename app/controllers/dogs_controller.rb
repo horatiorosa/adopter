@@ -9,6 +9,7 @@ class DogsController < ApplicationController
   end
 
   def show
+    @dog = Dog.find(params[:id])
   end
 
   def edit
@@ -18,7 +19,7 @@ class DogsController < ApplicationController
   	@dog = Dog.new(dog_params)
   	if @dog.save
   		flash[:notice] = 'New dog created'
-  		redirect_to user_path(@dog)
+  		redirect_to dogs_path(@dog)
   	else
   		flash[:alert] = 'There was a problem'
   		render :new
@@ -28,7 +29,7 @@ class DogsController < ApplicationController
   private
 
   def dog_params
-  	params.require(:dog).permit(:animal_type, :breed, :sex, :size, :age, :description, :location, :http, :image1, :image2, :image3)
+  	params.require(:dog).permit(:animal_type, :name, :breed, :sex, :size, :age, :description, :location, :http, :image1, :image2, :image3)
   end
 
 end

@@ -24,43 +24,94 @@
 
 
 body {
-	height: 100vh;
-	@include linear-gradient(to top, #8fdce5, #3dc3d1);
-	@include linear-gradient(0deg, #7db9e8, 100%);
+  height: 100vh;
+  @include linear-gradient(to top, #82F9C0, #0354CB);
+  //@include linear-gradient(0deg, #7db9e8, 100%);
 }
 
-.bubble1, .bubble2, .bubble3, .bubble4, .bubble5 {
-	border-radius: 100%;
-	border: 6px solid white;
-	position: absolute;
-	background-size: cover;
+.bubble-sm {
+  width: 15%;
+  max-width: 30%;
 }
 
+.bubble-md {
+  width: 30%;
+  max-width: 45%;
+}
 
-.bubble1 {
-	// background-image: url("dog-bg.jpg");
-	background-image: url("corgi.jpg");
-	width: 33%;
-	top: 300px;
-	left: 300px;
+.bubble-lg {
+  width: 40%;
+  max-width: 50%;
+}
+
+ .bubble {
+  border-radius: 100%;
+  border: 5px solid white;
+  position: relative;
+  //background-size: cover;
+  display: inline-block;
+  box-shadow: 0px 0px 15px 0px rgba(000,000,000, .5);
 }
 
 .bubble-box {
-	display: block;
-	text-align: center;
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+  height: 85vh;
+  width: 100%;
+
 }
 
+.bubble1 {
+  background-image: url("betty.jpg");
+  height: 150px;
+  width: 150px;
+  top: 105px;
+}
+
+.bubble2 {
+  background-image: url("brownie.jpg");
+  height: 250px;
+  width: 250px;
+  top: 10px;
+  left: 40px;
+}
+
+.bubble3 {
+  background-image: url("skylar.jpg");
+  height: 300px;
+  width: 300px;
+  top: 100px;
+  margin: 0px auto;
+}
+
+.bubble4 {
+  background-image: url("ros.jpg");
+  height: 150px;
+  width: 150px;
+  top: 150px;
+
+}
+
+.bubble5 {
+  background-image: url("petra.jpg");
+  height: 125px;
+  width: 125px;
+  top: 0px;
+  right: 10px;
+
+}
 /**=============== SEARCH BAR ===================**/
 
 
 .search-tools {  
-  $base-border-color: gainsboro !default;
+  $base-border-color: rgba(245, 240, 6, 1);
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
   $base-link-color: $action-color !default;
-  $dark-gray: #333 !default;
+  //$dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $base-font-color: $dark-gray !default;
   $search-tools-border-color: $base-border-color;
@@ -164,6 +215,7 @@ body {
       }
     }
   }
+
 }
 /**=======================================================**/
 

@@ -30,77 +30,85 @@ body {
 }
 
 .bubble-sm {
-  width: 15%;
-  max-width: 30%;
+  width: 7%;
+  max-width: 10%;
 }
 
 .bubble-md {
-  width: 30%;
-  max-width: 45%;
+  width: 12%;
+  max-width: 20%;
+}
+
+.bubble-md2 {
+  width: 20%;
+  max-width: 30%;
 }
 
 .bubble-lg {
-  width: 40%;
-  max-width: 50%;
+  width: 27%;
+  max-width: 40%;
 }
 
  .bubble {
   border-radius: 100%;
   border: 5px solid white;
-  position: relative;
-  //background-size: cover;
-  display: inline-block;
   box-shadow: 0px 0px 15px 0px rgba(000,000,000, .5);
 }
 
 .bubble-box {
+  display: flex;
+  flex-direction: row-reverse;
   margin: 0px auto;
-  display: block;
   text-align: center;
   height: 85vh;
-  width: 100%;
+  width: 75%;
 
 }
 
+/** betty **/
 .bubble1 {
-  background-image: url("betty.jpg");
-  height: 150px;
-  width: 150px;
-  top: 105px;
-}
-
-.bubble2 {
-  background-image: url("brownie.jpg");
-  height: 250px;
-  width: 250px;
-  top: 10px;
-  left: 40px;
-}
-
-.bubble3 {
-  background-image: url("skylar.jpg");
-  height: 300px;
-  width: 300px;
-  top: 100px;
-  margin: 0px auto;
-}
-
-.bubble4 {
-  background-image: url("ros.jpg");
-  height: 150px;
-  width: 150px;
   top: 150px;
-
+  left: 140px;
+  position: absolute;
 }
 
+/** brownie **/
+.bubble2 {
+  top: 170px;
+  left: 250px;
+  position: absolute;
+}
+
+/** skylar **/
+.bubble3 {
+  top: 170px;
+  left: 500px;
+  position: absolute;
+  z-index: 98;
+}
+
+/** petra **/
+.bubble4 {
+  top: 190px;
+  right: 320px;
+  position: absolute;
+}
+
+/** ros **/
 .bubble5 {
-  background-image: url("petra.jpg");
-  height: 125px;
-  width: 125px;
-  top: 0px;
-  right: 10px;
-
+  top: 80px;
+  right: 100px;
+  position: absolute;
+  z-index: 99;
 }
+
+/** corgi **/
+.bubble6 {
+  top: 140px;
+  right: 40px;
+  position: absolute;
+}
+
 /**=============== SEARCH BAR ===================**/
 
 

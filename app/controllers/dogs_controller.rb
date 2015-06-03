@@ -5,11 +5,7 @@ class DogsController < ApplicationController
   end
 
   def new
-<<<<<<< HEAD
   	@dog = Dog.new
-=======
-  	
->>>>>>> bbd7639205ab08882ffb771295e7b86e8e28d1d9
   end
 
   def show

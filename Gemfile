@@ -32,7 +32,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'paperclip'
 
 gem 'devise'
-
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'
+gem 'refills'
+gem 'bootstrap-sass', '~> 3.3.4'
 
 
 # Use Capistrano for deployment

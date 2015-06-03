@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
-resources :dogs
+
+  resources :dogs
 
   devise_for :views
-  get 'welcome/index'
+
+  get 'welcome/index', to: 'welcome#index', as: 'welcome'
+  get 'welcome/about', to: 'welcome#about', as: 'about'
 
   root 'welcome#index'
 

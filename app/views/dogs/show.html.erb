@@ -77,11 +77,21 @@
 
 
 
-<!--   <%= image_tag("dog-bg.jpg", :alt => "bg") %> -->
+<!--   < image_tag("dog-bg.jpg", :alt => "bg") > -->
 
-<<<<<<< HEAD
+
 <%= image_tag @dog.image1.url(:medium) %>
 
 <%= image_tag @dog.image2.url(:thumb) %>
-=======
->>>>>>> bbd7639205ab08882ffb771295e7b86e8e28d1d9
+
+
+<%= @dog.animal_type %>
+<%= @dog.breed %>
+<%= @dog.sex %>
+<%= @dog.age %>
+<%= @dog.description %>
+<%= @dog.location %>
+<%= link_to "Adopt Me", @dog.http %>
+
+
+

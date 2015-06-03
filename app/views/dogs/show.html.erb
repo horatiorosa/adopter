@@ -3,3 +3,13 @@
 <%= image_tag @dog.image1.url(:medium) %>
 
 <%= image_tag @dog.image2.url(:thumb) %>
+
+<%= @dog.animal_type %>
+<%= @dog.breed %>
+<%= @dog.sex %>
+<%= @dog.age %>
+<%= @dog.description %>
+<%= @dog.location %>
+<%= link_to "Adopt Me", @dog.http %>
+
+

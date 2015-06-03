@@ -1,8 +1,89 @@
-<h1>Dogs#show</h1>
+<div class="search-tools">
+  <div class="filter">
+    <label>Colors</label>
+    <div>
+      <ol>
+        <li>
+          <input id="red" type="checkbox">
+          <label for="red">Red</label>
+        </li>
+        <li>
+          <input id="green" type="checkbox">
+          <label for="green">Green</label>
+        </li>
+        <li>
+          <input id="blue" type="checkbox">
+          <label for="blue">Blue</label>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="filter">
+    <label>Sizes</label>
+    <div>
+      <ol>
+        <li>
+          <input id="small" type="checkbox">
+          <label for="small">Small</label>
+        </li>
+        <li>
+          <input id="medium" type="checkbox">
+          <label for="medium">Medium</label>
+        </li>
+        <li>
+          <input id="large" type="checkbox">
+          <label for="large">Large</label>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="filter">
+    <label>Lengths</label>
+    <div>
+      <ol>
+        <li>
+          <input id="short" type="checkbox">
+          <label for="short">Short</label>
+        </li>
+        <li>
+          <input id="long" type="checkbox">
+          <label for="long">Long</label>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="trigger">
+    <button>Update</button>
+  </div>
+</div>
+<div class="bubble-box">
+	<div class="bubble1 img-responsive img-circle"></div>
+	<div class="bubble2 img-responsive img-circle"></div>
+	<div class="bubble3 img-responsive img-circle"></div>
+	<div class="bubble4 img-responsive img-circle"></div>
+	<div class="bubble5 img-responsive img-circle"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   < image_tag("dog-bg.jpg", :alt => "bg") > -->
+
 
 <%= image_tag @dog.image1.url(:medium) %>
 
 <%= image_tag @dog.image2.url(:thumb) %>
+
 
 <%= @dog.animal_type %>
 <%= @dog.breed %>
@@ -11,5 +92,6 @@
 <%= @dog.description %>
 <%= @dog.location %>
 <%= link_to "Adopt Me", @dog.http %>
+
 
 

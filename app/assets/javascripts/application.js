@@ -17,26 +17,69 @@
 
 
 $(document).ready(function(){
+	$(".logo-fade").hide().delay(1000).fadeIn(5000);
   $(".bubble-x-sm").hide().delay(500).fadeIn(2700);
   $(".bubble-sm").hide().delay(1500).fadeIn(3500);
   $(".bubble-md").hide().delay(1000).fadeIn(5000);
   $(".bubble-md2").hide().delay(2500).fadeIn(2000);
   $(".bubble-lg").hide().fadeIn(2500);
 
-  $(".button-login").hide().delay(5000).fadeIn(500);
-  $(".button-signup").hide().delay(5000).fadeIn(1000);
-  $(".button-browse").hide().delay(5000).fadeIn(1500);
-  // $(".slogan").hide().delay(6500).fadeIn(1500);
+  $(".button-login").hide().delay(5000).fadeIn(400);
+  $(".button-signup").hide().delay(5000).fadeIn(800);
+  $(".button-browse").hide().delay(5000).fadeIn(1200);
+  $(".social-bar").hide().delay(5000).fadeIn(100);
+
+
+/////////////////// SLIDER ///////////////////////
 
 
 
-// var bgWidth = $('.bg-img').width();
-//   $('.bg-img').animate({
-//     opacity: 1.0,
-//     width: (bgWidth * 1.1),
-//   }, 8000);
+  var options = { $AutoPlay: true };
+  var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+
+  var options = {
+      $ArrowNavigatorOptions: {
+          $Class: $JssorArrowNavigator$,
+          $ChanceToShow: 2
+      }
+  };
+
+  var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+
+
+	//Define an array of slideshow transition code
+	var _SlideshowTransitions = [
+	{ code1 },
+	{ code2 },
+	{ code3 }
+	];
+	var options = {
+	    $AutoPlay: true,
+	    $SlideshowOptions: {
+	            $Class: $JssorSlideshowRunner$,
+	            $Transitions: _SlideshowTransitions,
+	            $TransitionsOrder: 1,
+	            $ShowLink: true
+	        }
+	};
+	var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+ 
+ var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+
+
 
 });
+
+
+
+
+
+
+
+
   
 /////////////////// SEARCH BAR /////////////////
 

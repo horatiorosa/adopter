@@ -6,12 +6,15 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 <<<<<<< HEAD
+<<<<<<< HEAD
 # dog = Dog.create(animal_type: 'Dog', name: 'Bruno', breed: 'Shiba Inu',
 # 	sex: 'Male', size: 'Medium', age: 'Adult', description: 'Full of energy',
 # 	location: 'New York', http: 'https://www.petfinder.com/petdetail/32255451/',
 # 		image1: "~/app/assets/images/bruno1.jpeg" )
 
 =======
+=======
+>>>>>>> 86e7d1f2b731e27d1491d44f7083e3d2ca695cd7
 dogs = Dog.create({animal_type: 'Dog'}, {name: 'Bruno'}, {breed: 'Shiba Inu'},
 	{sex: 'Male'}, {size: 'Medium'}, {age: 'Adult'}, {description: 'Full of energy'},
 	{location: 'New York'}, {http: 'https://www.petfinder.com/petdetail/32255451/'},
@@ -22,5 +25,9 @@ dog1 = Dog.create
 
 Image.create(dog_id: dog1.id, url: "scraps.jpg")
 Image.create(dog_id: dog1.id, url: "scraps2.jpg")
+<<<<<<< HEAD
 Image.create(dog_id: dog1.id, url: "scraps3.jpg")
 >>>>>>> d32df34dbc5e7b99e5b5cf1e5cce408592b8fbb1
+=======
+Image.create(dog_id: dog1.id, url: "scraps3.jpg")
+>>>>>>> 86e7d1f2b731e27d1491d44f7083e3d2ca695cd7

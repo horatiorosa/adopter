@@ -31,6 +31,7 @@ body {
   margin: 5%;
 }
 
+<<<<<<< HEAD
 /** ================ WELCOME PAGE ================= **/
 
 .logo {
@@ -46,11 +47,18 @@ body {
   // top: 30px;
   // left: 50px;
   z-index: 99;
+=======
+body {
+  height: 100vh;
+  @include linear-gradient(to top, #82F9C0, #0354CB);
+  //@include linear-gradient(0deg, #7db9e8, 100%);
+>>>>>>> 86e7d1f2b731e27d1491d44f7083e3d2ca695cd7
 }
 // .profile-logo {
 //   margin-bottom: 150px;
 // }
 
+<<<<<<< HEAD
 .bubble-x-sm {
   width: 5%;
   max-width: 5%;
@@ -74,11 +82,27 @@ body {
 .bubble-lg {
   width: 24%;
   max-width: 24%;
+=======
+.bubble-sm {
+  width: 15%;
+  max-width: 30%;
+}
+
+.bubble-md {
+  width: 30%;
+  max-width: 45%;
+}
+
+.bubble-lg {
+  width: 40%;
+  max-width: 50%;
+>>>>>>> 86e7d1f2b731e27d1491d44f7083e3d2ca695cd7
 }
 
  .bubble {
   border-radius: 100%;
   border: 5px solid white;
+<<<<<<< HEAD
   box-shadow: 0px 0px 15px 0px rgba(000,000,000, .5)
   
 }
@@ -100,6 +124,63 @@ body {
   left: 140px;
   position: absolute;
 }
+=======
+  position: relative;
+  //background-size: cover;
+  display: inline-block;
+  box-shadow: 0px 0px 15px 0px rgba(000,000,000, .5);
+}
+
+.bubble-box {
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+  height: 85vh;
+  width: 100%;
+
+}
+
+.bubble1 {
+  background-image: url("betty.jpg");
+  height: 150px;
+  width: 150px;
+  top: 105px;
+}
+
+.bubble2 {
+  background-image: url("brownie.jpg");
+  height: 250px;
+  width: 250px;
+  top: 10px;
+  left: 40px;
+}
+
+.bubble3 {
+  background-image: url("skylar.jpg");
+  height: 300px;
+  width: 300px;
+  top: 100px;
+  margin: 0px auto;
+}
+
+.bubble4 {
+  background-image: url("ros.jpg");
+  height: 150px;
+  width: 150px;
+  top: 150px;
+
+}
+
+.bubble5 {
+  background-image: url("petra.jpg");
+  height: 125px;
+  width: 125px;
+  top: 0px;
+  right: 10px;
+
+}
+/**=============== SEARCH BAR ===================**/
+>>>>>>> 86e7d1f2b731e27d1491d44f7083e3d2ca695cd7
 
 /** brownie **/
 .bubble2 {
@@ -108,6 +189,7 @@ body {
   position: absolute;
 }
 
+<<<<<<< HEAD
 /** skylar **/
 .bubble3 {
   top: 170px;
@@ -115,6 +197,44 @@ body {
   position: absolute;
   z-index: 98;
 }
+=======
+.search-tools {  
+  $base-border-color: rgba(245, 240, 6, 1);
+  $base-border-radius: 3px !default;
+  $base-line-height: 1.5em !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $base-link-color: $action-color !default;
+  //$dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $search-tools-border-color: $base-border-color;
+  $search-tools-background: lighten($search-tools-border-color, 10%);
+
+
+  @include clearfix;
+  background: $search-tools-background;
+  border-radius: $base-border-radius;
+  border: 1px solid $search-tools-border-color;
+  padding: $gutter / 2;
+
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    list-style: none;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: $base-spacing / 4;
+  }
+>>>>>>> 86e7d1f2b731e27d1491d44f7083e3d2ca695cd7
 
 /** petra **/
 .bubble4 {
@@ -179,9 +299,18 @@ hr.breakline {
 
 /** =====  LOWER NAV ============ **/
 
+<<<<<<< HEAD
 .lower-nav, .social-bar {
   display: block;
   text-align: center;
+=======
+      @include media($large-screen) {
+        margin-top: 1.55em;
+      }
+    }
+  }
+
+>>>>>>> 86e7d1f2b731e27d1491d44f7083e3d2ca695cd7
 }
 
 .lower-nav li, .social-bar li {

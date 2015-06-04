@@ -12,9 +12,12 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150604203854) do
 =======
 
+=======
+>>>>>>> 86e7d1f2b731e27d1491d44f7083e3d2ca695cd7
 ActiveRecord::Schema.define(version: 20150602213056) do
 >>>>>>> d32df34dbc5e7b99e5b5cf1e5cce408592b8fbb1
 

@@ -17,14 +17,16 @@
 
 
 $(document).ready(function(){
-  $(".bubble-x-sm").hide().fadeIn(5000);
-  $(".bubble-sm").hide().fadeIn(7000);
-  $(".bubble-md").hide().fadeIn(6000);
-  $(".bubble-md2").hide().fadeIn(8000);
-  $(".bubble-lg").hide().fadeIn(4000);
-  $(".button-signup").hide().delay(3000).fadeIn(4000);
-  $(".button-login").hide().delay(3000).fadeIn(4000);
-  $(".button-browse").hide().delay(3000).fadeIn(4000);
+  $(".bubble-x-sm").hide().delay(500).fadeIn(2700);
+  $(".bubble-sm").hide().delay(1500).fadeIn(3500);
+  $(".bubble-md").hide().delay(1000).fadeIn(5000);
+  $(".bubble-md2").hide().delay(2500).fadeIn(2000);
+  $(".bubble-lg").hide().fadeIn(2500);
+
+  $(".button-login").hide().delay(5000).fadeIn(500);
+  $(".button-signup").hide().delay(5000).fadeIn(1000);
+  $(".button-browse").hide().delay(5000).fadeIn(1500);
+  // $(".slogan").hide().delay(6500).fadeIn(1500);
 
 
 

@@ -5,30 +5,54 @@
   <script src="../../assets/javascripts/cycle2.js"></script>
 </head>
   
-
-  <!-- declare a slideshow -->
-<div class="cycle-slideshow">
-    <img src="http://malsup.github.com/images/p1.jpg">
-    <img src="http://malsup.github.com/images/p2.jpg">
-    <img src="http://malsup.github.com/images/p3.jpg">
-</div>
-
-
-  <section class="main">
-    <aside>
-      <p>Doggie Stats!</p>
-    </aside>
-    <article>
-      <p>story of my life!  please save me!</p>
-    </article>
-    <div class="location-sidebar">
-      <p>This is the content of the article</p>
+<div class="container col-md-12">
+  <div class="col-md-5">
+    <!-- declare a slideshow -->
+    <div class="cycle-slideshow">
+        <%= image_tag 'skylar.jpg'%>
+        <%= image_tag 'brownie.jpg' %>
+        <%= image_tag 'corgi.jpg' %>
     </div>
-  </section>
+  </div>
 
+  <div class="col-md-4 location">
+    <h1>location</h1>
+    <p>This is the content of the article Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam accusamus nemo, praesentium cumque temporibus cupiditate aperiam iusto quisquam mollitia magnam eius earum, blanditiis sit. Eum totam possimus quibusdam numquam.</p>
+  </div>
+
+
+<hr class="style-two">
+
+
+  <div class="col-md-5 stats">
+    <h2>Doggie Stats!</h2>
+    <!-- Progress Bar --> 
+    <div class="progress">
+      <div class="bar" style="width: 85%;">age</div>
+      </div>  
+      <div class="progress">
+      <div class="bar" style="width: 75%;">demeanor</div>
+      </div>    
+      <div class="progress">
+      <div class="bar" style="width: 100%;">plays well with others</div>
+      </div> 
+      <div class="progress">
+      <div class="bar" style="width: 55%;">likes children</div>
+      </div> 
+      <div class="bar" style="width: 85%;">needs walks</div>
+      </div>  
+      <div class="progress">
+      <div class="bar" style="width: 75%;">drool factor</div>     
+      </div> 
+    <!-- Progress Bar End --> 
+  </div>
+  <div class="col-md-4">
+    <h1>About Me</h1>
+    <p class="lead">story of my life!  please save me! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim suscipit unde nemo aspernatur itaque qui quas voluptas quaerat nam laudantium. Vero eligendi et, nisi consequuntur suscipit molestiae laborum inventore quia.</p>
+    <p>story of my life!  please save me! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim suscipit unde nemo aspernatur itaque qui quas voluptas quaerat nam laudantium. Vero eligendi et, nisi consequuntur suscipit molestiae laborum inventore quia.</p>
+    <p>story of my life!  please save me! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim suscipit unde nemo aspernatur itaque qui quas voluptas quaerat nam laudantium. Vero eligendi et, nisi consequuntur suscipit molestiae laborum inventore quia.</p>
+  </div>
 </div>
-
-
 
 <!-- JUST A TRIAL FORM......  <div class="search-tools">
   <div class="filter">

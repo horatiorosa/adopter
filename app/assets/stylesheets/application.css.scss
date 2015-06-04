@@ -21,10 +21,8 @@
 
 
 
-
-
 body {
-  height: 135vh;
+  height: 125vh;
   @include linear-gradient(to top, #82F9C0, #0354CB);
   //@include linear-gradient(0deg, #7db9e8, 100%);
 }
@@ -34,6 +32,24 @@ body {
 }
 
 /** ================ WELCOME PAGE ================= **/
+
+.logo {
+  background-image: url(images/adoptr-logo.png);
+  background-size: cover;
+  width: 300px;
+  height: auto;
+  display: block;
+  text-align: left;
+  margin-top: 45px;
+  margin-left: 50px;
+  // position: absolute;
+  // top: 30px;
+  // left: 50px;
+  z-index: 99;
+}
+// .profile-logo {
+//   margin-bottom: 150px;
+// }
 
 .bubble-x-sm {
   width: 5%;
@@ -67,23 +83,20 @@ body {
   
 }
 
-.bubble:hover {
-}
-
 .bubble-box {
   // display: flex;
   // flex-direction: row-reverse;
   // align-items: center;
   margin: 0px auto;
   text-align: center;
-  height: 85vh;
+  height: 65vh;
   width: 75%;
 
 }
 
 /** betty **/
 .bubble1 {
-  top: 150px;
+  top: 170px;
   left: 140px;
   position: absolute;
 }
@@ -126,38 +139,25 @@ body {
 }
 
 
-
-/**============= SOCIAL ICONS ================================**/
-
-.facebook {
-  width: 75px;
-  height: 75px;
-  background: url(images/social-sprite.png) -70px 0px; 
-}
-
-
-
-
-
 /**============= DOG INDEX ================================**/
 
 .progress {
   height: 30px;
   border-radius:0px;
-  background:transparent !important;
+  background:transparent; 
   -webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 inset;
   margin-bottom:15px;
 }
 
 .bar {
   height:35px;
-  font-size:16px !important;
+  font-size:16px;
   line-height: 30px;
-  background: #FA5882 !important;   
+  background: #FA5882;   
   -webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 inset;
-  text-shadow: none !important;
-  text-align:left !important;
-  padding-left: 16px !important;
+  text-shadow: none;
+  text-align:left;
+  padding-left: 16px;
   color: white;
 }
 
@@ -167,21 +167,18 @@ body {
 //   border-radius: 3px;
 // }
 
-hr.style-two {
+hr.breakline {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
 
-.carousel-size {
-  width: 40%;
-  max-width: 40%;
-}
 
 
 
 
 /** =====  LOWER NAV ============ **/
+
 .lower-nav, .social-bar {
   display: block;
   text-align: center;
@@ -204,7 +201,8 @@ hr.style-two {
 }
 
 .slogan h1 {
-  margin: 25px;
+  margin-top: 0px;
+  margin-bottom: 25px;
   padding-right: 22px;
   font-size: 1.6em;
   font-style: italic;
@@ -248,72 +246,122 @@ hr.style-two {
 
 
 
-/**=============== CSS ANIMATIONS ===================**/
-
-
-// .bubble3 {
-//   -moz-transition: all 3s ease;
-//   /* all other css properties */
-// }
-
-// .bubble3.zoom {
-//   /*-moz-transform: scale(1.1);*/
-//   -webkit-transform: scale(1.2);
-//   transform: scale(1.2);
-//   }
+/**=============== BROWSE PAGE ===================**/
 
 
 
-@keyframes jello {
-  11.1% {
-    -webkit-transform: none;
-            transform: none
-  }
+#browse-page {
+  background-color: rgba(255, 255, 255, .6);
+}
 
-  22.2% {
+.browse-logo {
+  background-image: url(images/adoptr-logo.png);
+  background-size: cover;
+  width: 100px;
+  height: auto;
+  display: block;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  z-index: 99;
+}
 
-    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-            transform: skewX(-12.5deg) skewY(-12.5deg)
-  }
-  33.3% {
-    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-            transform: skewX(6.25deg) skewY(6.25deg)
-  }
-  44.4% {
-    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-            transform: skewX(-3.125deg) skewY(-3.125deg)
-  }
-  55.5% {
-    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-            transform: skewX(1.5625deg) skewY(1.5625deg)
-  }
-  66.6% {
-    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-            transform: skewX(-0.78125deg) skewY(-0.78125deg)
-  }
-  77.7% {
-    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
-            transform: skewX(0.390625deg) skewY(0.390625deg)
-  }
-  88.8% {
-    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-            transform: skewX(-0.1953125deg) skewY(-0.1953125deg)
-  }
-  100% {
-    -webkit-transform: none;
-            transform: none
-  }
+.browse-nav {
+  display: block;
+  text-align: center;
+}
+
+.browse-nav li {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.button-yes, .button-no {
+  font-style: bold;
+  padding: 5px 20px;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 3em;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  background: rgba(white, .6);
+}
+
+.button-yes:hover, .button-no:hover {
+  border: 2px solid #FA5882;
+  color: #FA5882;
+  text-shadow: none;
+  background-color: rgba(255,255,255, .4);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;  
+}
+
+/** ============= JSSOR SLIDER =========== **/
+/*
+.jssora21l                  (normal)
+.jssora21r                  (normal)
+.jssora21l:hover            (normal mouseover)
+.jssora21r:hover            (normal mouseover)
+.jssora21l.jssora21ldn      (mousedown)
+.jssora21r.jssora21rdn      (mousedown)
+*/
+
+.jssora21l, .jssora21r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url(../img/a21.png) center center no-repeat;
+    overflow: hidden;
+}
+.jssora21l { background-position: -3px -33px; }
+.jssora21r { background-position: -63px -33px; }
+.jssora21l:hover { background-position: -123px -33px; }
+.jssora21r:hover { background-position: -183px -33px; }
+.jssora21l.jssora21ldn { background-position: -243px -33px; }
+.jssora21r.jssora21rdn { background-position: -303px -33px; }
+
+/**  ADDL SLIDER CODE  **/
+
+#slider1_container {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 100%; 
+  height: 320px;
+  position: relative; 
+  top: 0px; 
+  left: 0px; 
+  width: 900px;; 
+  height: 450px;
+}
+
+.slides {
+  cursor: move; 
+  position: absolute; 
+  overflow: hidden; 
+  left: 0px; 
+  top: 0px; 
+  width: 1100px; 
+  height: 450px;
+  border: 5px solid white;
+  box-shadow: 0 0 5px rgba(000,000,000, .2);
+}
+
+.img-full-width {
+  width: 100%;
+  height: auto;
 }
 
 
-
-.bubble-lg.jello {
-    -webkit-animation-name:jello;
-            animation-name:jello;
-    -webkit-transform-origin: center;
-
-            transform-origin: center
-}
 
 /**=============== SEARCH BAR ===================**/
 
@@ -431,12 +479,6 @@ hr.style-two {
 //   }
 
 // }
-
-
-
-/** ============= CAROUSEL =========== **/
-
-
 
 
 

@@ -2,113 +2,56 @@
   <!-- include jQuery -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
   <!-- include Cycle2 -->
-  <script src="../../assets/javascripts/cycle2.js"></script>
+  <script src="../../assets/javascripts/jssor.slider.mini.js"></script>
 </head>
   
-<div class="container col-md-12">
-  <div class="col-md-5">
-    <!-- declare a slideshow -->
-    <div class="cycle-slideshow">
-        <%= image_tag 'skylar.jpg'%>
-        <%= image_tag 'brownie.jpg' %>
-        <%= image_tag 'corgi.jpg' %>
+ <div class="browse-logo"><%= image_tag 'adoptr-logo.png' %></div>
+<hr class="breakline">
+
+<div id="browse-page" class="container-fluid">
+  <div class="row-1 col-md-12">
+  
+      <div id="slider1_container">
+        <!-- Slides Container -->
+        <div u="slides" class="slides">
+          <div class="img-responsive"><%= image_tag "skylar-carousel.png" %></div>
+          <div class="img-responsive"><%= image_tag "skylar-carousel2.png" %></div>
+          <div class="img-responsive"><%= image_tag "skylar-carousel3.png" %></div>
+        </div>
+      </div> 
+  </div>
+
+  <div class="browse-nav">
+  <ul>
+    <li><div class="button-yes">view</div></li>
+    <li><div class="button-no">pass</div></li>
+  </ul>
+</div>
+
+  <div class="row-1">
+    <div class="col-md-12 stats">
+      <div class="lead"><h2>personality</h2></div>
+      <!-- Progress Bar --> 
+      <div class="progress">
+        <div class="bar" style="width: 85%;">age</div>
+        </div>  
+        <div class="progress">
+        <div class="bar" style="width: 75%;">demeanor</div>
+        </div>    
+        <div class="progress">
+        <div class="bar" style="width: 100%;">plays well with others</div>
+        </div> 
+        <div class="progress">
+        <div class="bar" style="width: 55%;">likes children</div>
+        </div> 
+        <div class="bar" style="width: 85%;">needs walks</div>
+        </div>  
+        <div class="progress">
+        <div class="bar" style="width: 75%;">drool factor</div>     
+        </div> 
+      </div>
+      <!-- Progress Bar End --> 
     </div>
-  </div>
-
-  <div class="col-md-4 location">
-    <h1>location</h1>
-    <p>This is the content of the article Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam accusamus nemo, praesentium cumque temporibus cupiditate aperiam iusto quisquam mollitia magnam eius earum, blanditiis sit. Eum totam possimus quibusdam numquam.</p>
-  </div>
-
-
-<hr class="style-two">
-
-
-  <div class="col-md-5 stats">
-    <h2>Doggie Stats!</h2>
-    <!-- Progress Bar --> 
-    <div class="progress">
-      <div class="bar" style="width: 85%;">age</div>
-      </div>  
-      <div class="progress">
-      <div class="bar" style="width: 75%;">demeanor</div>
-      </div>    
-      <div class="progress">
-      <div class="bar" style="width: 100%;">plays well with others</div>
-      </div> 
-      <div class="progress">
-      <div class="bar" style="width: 55%;">likes children</div>
-      </div> 
-      <div class="bar" style="width: 85%;">needs walks</div>
-      </div>  
-      <div class="progress">
-      <div class="bar" style="width: 75%;">drool factor</div>     
-      </div> 
-    <!-- Progress Bar End --> 
-  </div>
-  <div class="col-md-4">
-    <h1>About Me</h1>
-    <p class="lead">story of my life!  please save me! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim suscipit unde nemo aspernatur itaque qui quas voluptas quaerat nam laudantium. Vero eligendi et, nisi consequuntur suscipit molestiae laborum inventore quia.</p>
-    <p>story of my life!  please save me! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim suscipit unde nemo aspernatur itaque qui quas voluptas quaerat nam laudantium. Vero eligendi et, nisi consequuntur suscipit molestiae laborum inventore quia.</p>
-    <p>story of my life!  please save me! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim suscipit unde nemo aspernatur itaque qui quas voluptas quaerat nam laudantium. Vero eligendi et, nisi consequuntur suscipit molestiae laborum inventore quia.</p>
   </div>
 </div>
 
-<!-- JUST A TRIAL FORM......  <div class="search-tools">
-  <div class="filter">
-    <label>Colors</label>
-    <div>
-      <ol>
-        <li>
-          <input id="red" type="checkbox">
-          <label for="red">Red</label>
-        </li>
-        <li>
-          <input id="green" type="checkbox">
-          <label for="green">Green</label>
-        </li>
-        <li>
-          <input id="blue" type="checkbox">
-          <label for="blue">Blue</label>
-        </li>
-      </ol>
-    </div>
-  </div>
-  <div class="filter">
-    <label>Sizes</label>
-    <div>
-      <ol>
-        <li>
-          <input id="small" type="checkbox">
-          <label for="small">Small</label>
-        </li>
-        <li>
-          <input id="medium" type="checkbox">
-          <label for="medium">Medium</label>
-        </li>
-        <li>
-          <input id="large" type="checkbox">
-          <label for="large">Large</label>
-        </li>
-      </ol>
-    </div>
-  </div>
-  <div class="filter">
-    <label>Lengths</label>
-    <div>
-      <ol>
-        <li>
-          <input id="short" type="checkbox">
-          <label for="short">Short</label>
-        </li>
-        <li>
-          <input id="long" type="checkbox">
-          <label for="long">Long</label>
-        </li>
-      </ol>
-    </div>
-  </div>
-  <div class="trigger">
-    <button>search!</button>
-  </div>
-</div> -->

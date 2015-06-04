@@ -29,24 +29,35 @@ body {
   //@include linear-gradient(0deg, #7db9e8, 100%);
 }
 
+#dog-index-wrapper {
+  margin: 5%;
+}
+
+/** ================ WELCOME PAGE ================= **/
+
+.bubble-x-sm {
+  width: 5%;
+  max-width: 5%;
+}
+
 .bubble-sm {
-  width: 7%;
-  max-width: 10%;
+  width: 9%;
+  max-width: 9%;
 }
 
 .bubble-md {
   width: 12%;
-  max-width: 20%;
+  max-width: 12%;
 }
 
 .bubble-md2 {
   width: 20%;
-  max-width: 30%;
+  max-width: 20%;
 }
 
 .bubble-lg {
-  width: 27%;
-  max-width: 40%;
+  width: 24%;
+  max-width: 24%;
 }
 
  .bubble {
@@ -56,8 +67,9 @@ body {
 }
 
 .bubble-box {
-  display: flex;
-  flex-direction: row-reverse;
+  // display: flex;
+  // flex-direction: row-reverse;
+  // align-items: center;
   margin: 0px auto;
   text-align: center;
   height: 85vh;
@@ -96,141 +108,266 @@ body {
 
 /** ros **/
 .bubble5 {
-  top: 80px;
-  right: 100px;
+  top: 200px;
+  right: 140px;
   position: absolute;
   z-index: 99;
 }
 
 /** corgi **/
 .bubble6 {
-  top: 140px;
-  right: 40px;
+  top: 120px;
+  right: 65px;
   position: absolute;
+}
+
+/** =====  LOWER NAV ============ **/
+.lower-nav {
+  display: block;
+  text-align: center;
+}
+
+.lower-nav li {
+  display: inline-block;
+}
+
+.button-login, .button-signup, .button-browse {
+  font-style: bold;
+  padding: 5px 12px;
+  margin-right: 65px;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 1.8em;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  background: rgba(black, 0);
+}
+
+.button-login:hover, .button-signup:hover, .button-browse:hover {
+  border: 2px solid #FA5882;
+  color: #FA5882;
+  text-shadow: none;
+  background-color: rgba(255,255,255, .4);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+-webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;  
+}
+
+
+/**=============== CSS ANIMATIONS ===================**/
+
+
+// .bubble3 {
+//   -moz-transition: all 3s ease;
+//   /* all other css properties */
+// }
+
+// .bubble3.zoom {
+//   /*-moz-transform: scale(1.1);*/
+//   -webkit-transform: scale(1.2);
+//   transform: scale(1.2);
+//   }
+
+
+
+@keyframes jello {
+  11.1% {
+    -webkit-transform: none;
+            transform: none
+  }
+
+  22.2% {
+
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+            transform: skewX(-12.5deg) skewY(-12.5deg)
+  }
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+            transform: skewX(6.25deg) skewY(6.25deg)
+  }
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+            transform: skewX(-3.125deg) skewY(-3.125deg)
+  }
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+            transform: skewX(1.5625deg) skewY(1.5625deg)
+  }
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+            transform: skewX(-0.78125deg) skewY(-0.78125deg)
+  }
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+            transform: skewX(0.390625deg) skewY(0.390625deg)
+  }
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+            transform: skewX(-0.1953125deg) skewY(-0.1953125deg)
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none
+  }
+}
+
+
+
+.bubble-lg.jello {
+    -webkit-animation-name:jello;
+            animation-name:jello;
+    -webkit-transform-origin: center;
+
+            transform-origin: center
 }
 
 /**=============== SEARCH BAR ===================**/
 
 
-.search-tools {  
-  $base-border-color: rgba(245, 240, 6, 1);
-  $base-border-radius: 3px !default;
-  $base-line-height: 1.5em !default;
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $base-link-color: $action-color !default;
-  //$dark-gray: #333 !default;
-  $large-screen: em(860) !default;
-  $base-font-color: $dark-gray !default;
-  $search-tools-border-color: $base-border-color;
-  $search-tools-background: lighten($search-tools-border-color, 10%);
+// .search-tools {  
+//   $base-border-color: rgba(245, 240, 6, 1);
+//   $base-border-radius: 3px !default;
+//   $base-line-height: 1.5em !default;
+//   $base-spacing: 1.5em !default;
+//   $action-color: #477DCA !default;
+//   $base-link-color: $action-color !default;
+//   //$dark-gray: #333 !default;
+//   $large-screen: em(860) !default;
+//   $base-font-color: $dark-gray !default;
+//   $search-tools-border-color: $base-border-color;
+//   $search-tools-background: lighten($search-tools-border-color, 10%);
 
 
-  @include clearfix;
-  background: $search-tools-background;
-  border-radius: $base-border-radius;
-  border: 1px solid $search-tools-border-color;
-  padding: $gutter / 2;
+//   @include clearfix;
+//   background: $search-tools-background;
+//   border-radius: $base-border-radius;
+//   border: 1px solid $search-tools-border-color;
+//   padding: $gutter / 2;
 
-  ol {
-    margin: 0;
-    padding: 0;
+//   ol {
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   li {
+//     font-size: 0.8em;
+//     line-height: 1.5em;
+//     list-style: none;
+//   }
+
+//   label {
+//     display: block;
+//     font-weight: bold;
+//     margin-bottom: $base-spacing / 4;
+//   }
+
+//   .filter {
+//     margin-bottom: 1em;
+
+//     @include media($large-screen) {
+//       @include span-columns(3.5);
+//       margin-bottom: 0;
+//     }
+
+//      div {
+//       @include box-sizing(border-box);
+//       @include transition(border-color);
+//       background-color: white;
+//       border-radius: $base-border-radius;
+//       border: 1px solid $base-border-color;
+//       font-size: 1em;
+//       margin-bottom: $base-spacing / 2;
+//       padding: ($base-spacing / 3) ($base-spacing / 3);
+//       position: relative;
+//       width: 100%;
+
+//       &:focus,
+//       &:hover {
+//         border-color: darken($base-border-color, 10%);
+//       }
+
+//       label {
+//         cursor: pointer;
+//         font-weight: 400;
+//         margin-bottom: 0;
+//       }
+//     }
+
+//     ol {
+//       margin-top: 1em;
+
+//       label {
+//         display: inline;
+//       }
+//     }
+
+//     button {
+//       @include button(simple, lighten($search-tools-background, 10%));
+//       @include position(absolute, 5px 5px auto auto);
+//       font-size: 0.7em;
+//     }
+
+//     .hide-options {
+//       margin-bottom: 0;
+
+//       ol, button {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   .trigger {
+//     width: 100%;
+
+//     @include media($large-screen) {
+//       @include span-columns(1.5);
+//     }
+
+//     button {
+//       @include button(flat, $action-color);
+//       margin-top: 1em;
+//       padding-bottom: 0.5em;
+//       padding-top: 0.5em;
+//       width: 100%;
+
+//       @include media($large-screen) {
+//         margin-top: 1.55em;
+//       }
+//     }
+//   }
+
+// }
+/**============= DOG INDEX ================================**/
+
+section {
+  @include outer-container;
+  
+  aside {
+    @include span-columns(3);
+    background-color: gray;
   }
-
-  li {
-    font-size: 0.8em;
-    line-height: 1.5em;
-    list-style: none;
+  article {
+    @include span-columns(4);
+    background-color:green;
   }
-
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: $base-spacing / 4;
+  .location-sidebar {
+    @include span-columns(3);
+    background-color: red;
   }
-
-  .filter {
-    margin-bottom: 1em;
-
-    @include media($large-screen) {
-      @include span-columns(3.5);
-      margin-bottom: 0;
-    }
-
-     div {
-      @include box-sizing(border-box);
-      @include transition(border-color);
-      background-color: white;
-      border-radius: $base-border-radius;
-      border: 1px solid $base-border-color;
-      font-size: 1em;
-      margin-bottom: $base-spacing / 2;
-      padding: ($base-spacing / 3) ($base-spacing / 3);
-      position: relative;
-      width: 100%;
-
-      &:focus,
-      &:hover {
-        border-color: darken($base-border-color, 10%);
-      }
-
-      label {
-        cursor: pointer;
-        font-weight: 400;
-        margin-bottom: 0;
-      }
-    }
-
-    ol {
-      margin-top: 1em;
-
-      label {
-        display: inline;
-      }
-    }
-
-    button {
-      @include button(simple, lighten($search-tools-background, 10%));
-      @include position(absolute, 5px 5px auto auto);
-      font-size: 0.7em;
-    }
-
-    .hide-options {
-      margin-bottom: 0;
-
-      ol, button {
-        display: none;
-      }
-    }
-  }
-
-  .trigger {
-    width: 100%;
-
-    @include media($large-screen) {
-      @include span-columns(1.5);
-    }
-
-    button {
-      @include button(flat, $action-color);
-      margin-top: 1em;
-      padding-bottom: 0.5em;
-      padding-top: 0.5em;
-      width: 100%;
-
-      @include media($large-screen) {
-        margin-top: 1.55em;
-      }
-    }
-  }
-
 }
-/**=======================================================**/
 
 
 
 
 
+
+/** ============= CAROUSEL =========== **/
 
 
 

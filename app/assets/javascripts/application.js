@@ -15,115 +15,136 @@
 //= require turbolinks
 //= require_tree .
 
+
+$(document).ready(function(){
+  $(".bubble-x-sm").hide().fadeIn(5000);
+  $(".bubble-sm").hide().fadeIn(7000);
+  $(".bubble-md").hide().fadeIn(6000);
+  $(".bubble-md2").hide().fadeIn(8000);
+  $(".bubble-lg").hide().fadeIn(4000);
+  $(".button-signup").hide().delay(3000).fadeIn(4000);
+  $(".button-login").hide().delay(3000).fadeIn(4000);
+  $(".button-browse").hide().delay(3000).fadeIn(4000);
+
+
+
+// var bgWidth = $('.bg-img').width();
+//   $('.bg-img').animate({
+//     opacity: 1.0,
+//     width: (bgWidth * 1.1),
+//   }, 8000);
+
+});
+  
 /////////////////// SEARCH BAR /////////////////
 
-var Filter = (function() {
-  function Filter(element) {
-    this._element = $(element);
-    this._optionsContainer = this._element.find(this.constructor.optionsContainerSelector);
-  }
+// var Filter = (function() {
+//   function Filter(element) {
+//     this._element = $(element);
+//     this._optionsContainer = this._element.find(this.constructor.optionsContainerSelector);
+//   }
 
-  Filter.selector = '.filter';
-  Filter.optionsContainerSelector = '> div';
-  Filter.hideOptionsClass = 'hide-options';
+//   Filter.selector = '.filter';
+//   Filter.optionsContainerSelector = '> div';
+//   Filter.hideOptionsClass = 'hide-options';
 
-  Filter.enhance = function() {
-    var klass = this;
+//   Filter.enhance = function() {
+//     var klass = this;
 
-    return $(klass.selector).each(function() {
-      return new klass(this).enhance();
-    });
-  };
+//     return $(klass.selector).each(function() {
+//       return new klass(this).enhance();
+//     });
+//   };
 
-  Filter.prototype.enhance = function() {
-    this._buildUI();
-    this._bindEvents();
-  };
+//   Filter.prototype.enhance = function() {
+//     this._buildUI();
+//     this._bindEvents();
+//   };
 
-  Filter.prototype._buildUI = function() {
-    this._summaryElement = $('<label></label>').
-      addClass('summary').
-      attr('data-role', 'summary').
-      prependTo(this._optionsContainer);
+//   Filter.prototype._buildUI = function() {
+//     this._summaryElement = $('<label></label>').
+//       addClass('summary').
+//       attr('data-role', 'summary').
+//       prependTo(this._optionsContainer);
 
-    this._clearSelectionButton = $('<button></button>').
-      text('Clear').
-      attr('type', 'button').
-      insertAfter(this._summaryElement);
+//     this._clearSelectionButton = $('<button></button>').
+//       text('Clear').
+//       attr('type', 'button').
+//       insertAfter(this._summaryElement);
 
-    this._optionsContainer.addClass(this.constructor.hideOptionsClass);
-    this._updateSummary();
-  };
+//     this._optionsContainer.addClass(this.constructor.hideOptionsClass);
+//     this._updateSummary();
+//   };
 
-  Filter.prototype._bindEvents = function() {
-    var self = this;
+//   Filter.prototype._bindEvents = function() {
+//     var self = this;
 
-    this._summaryElement.click(function() {
-      self._toggleOptions();
-    });
+//     this._summaryElement.click(function() {
+//       self._toggleOptions();
+//     });
 
-    this._clearSelectionButton.click(function() {
-      self._clearSelection();
-    });
+//     this._clearSelectionButton.click(function() {
+//       self._clearSelection();
+//     });
 
-    this._checkboxes().change(function() {
-      self._updateSummary();
-    });
+//     this._checkboxes().change(function() {
+//       self._updateSummary();
+//     });
 
-    $('body').click(function(e) {
-      var inFilter = $(e.target).closest(self.constructor.selector).length > 0;
+//     $('body').click(function(e) {
+//       var inFilter = $(e.target).closest(self.constructor.selector).length > 0;
 
-      if (!inFilter) {
-        self._allOptionsContainers().addClass(self.constructor.hideOptionsClass);
-      }
-    });
-  };
+//       if (!inFilter) {
+//         self._allOptionsContainers().addClass(self.constructor.hideOptionsClass);
+//       }
+//     });
+//   };
 
-  Filter.prototype._toggleOptions = function() {
-    this._allOptionsContainers().
-      not(this._optionsContainer).
-      addClass(this.constructor.hideOptionsClass);
+//   Filter.prototype._toggleOptions = function() {
+//     this._allOptionsContainers().
+//       not(this._optionsContainer).
+//       addClass(this.constructor.hideOptionsClass);
 
-    this._optionsContainer.toggleClass(this.constructor.hideOptionsClass);
-  };
+//     this._optionsContainer.toggleClass(this.constructor.hideOptionsClass);
+//   };
 
-  Filter.prototype._updateSummary = function() {
-    var summary = 'All';
-    var checked = this._checkboxes().filter(':checked');
+//   Filter.prototype._updateSummary = function() {
+//     var summary = 'All';
+//     var checked = this._checkboxes().filter(':checked');
 
-    if (checked.length > 0 && checked.length < this._checkboxes().length) {
-      summary = this._labelsFor(checked).join(', ');
-    }
+//     if (checked.length > 0 && checked.length < this._checkboxes().length) {
+//       summary = this._labelsFor(checked).join(', ');
+//     }
 
-    this._summaryElement.text(summary);
-  };
+//     this._summaryElement.text(summary);
+//   };
 
-  Filter.prototype._clearSelection = function() {
-    this._checkboxes().each(function() {
-      $(this).prop('checked', false);
-    });
+//   Filter.prototype._clearSelection = function() {
+//     this._checkboxes().each(function() {
+//       $(this).prop('checked', false);
+//     });
 
-    this._updateSummary();
-  };
+//     this._updateSummary();
+//   };
 
-  Filter.prototype._checkboxes = function() {
-    return this._element.find(':checkbox');
-  };
+//   Filter.prototype._checkboxes = function() {
+//     return this._element.find(':checkbox');
+//   };
 
-  Filter.prototype._labelsFor = function(inputs) {
-    return inputs.map(function() {
-      var id = $(this).attr('id');
-      return $("label[for='" + id + "']").text();
-    }).get();
-  };
+//   Filter.prototype._labelsFor = function(inputs) {
+//     return inputs.map(function() {
+//       var id = $(this).attr('id');
+//       return $("label[for='" + id + "']").text();
+//     }).get();
+//   };
 
-  Filter.prototype._allOptionsContainers = function() {
-    return $(this.constructor.selector + " " + this.constructor.optionsContainerSelector);
-  };
+//   Filter.prototype._allOptionsContainers = function() {
+//     return $(this.constructor.selector + " " + this.constructor.optionsContainerSelector);
+//   };
 
-  return Filter;
-})();
+//   return Filter;
+// })();
 
-$(function() {
-  Filter.enhance();
-});
+// $(function() {
+//   Filter.enhance();
+// });

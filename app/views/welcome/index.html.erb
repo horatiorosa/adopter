@@ -1,5 +1,32 @@
-<h1>Welcome to Adaptr</h1>
 
-<%= link_to "sign up", view_registration_path %>
+  <div class="logo logo-fade"><%= image_tag 'adoptr-logo.png' %></div>
 
-<%= link_to "log in" , view_session_path %>
+
+<div class="bubble-box">
+  <div class="bubble-sm bubble1"><%= image_tag 'betty.jpg', class:  'img-circle img-responsive, bubble' %></div>
+  <div class="bubble-md2 bubble2"><%= image_tag 'brownie.jpg', class:  'img-circle img-responsive, bubble' %></div>
+  <div class="bubble-lg bubble3"><%= image_tag 'skylar.jpg', class:  'img-circle img-responsive, bubble' %></div>
+  <div class="bubble-md bubble4"><%= image_tag 'petra.jpg', class:  'img-circle img-responsive, bubble' %></div>
+  <div class="bubble-sm bubble5"><%= image_tag 'ros.jpg', class:  'img-circle img-responsive, bubble' %></div>
+  <div class="bubble-x-sm bubble6"><%= image_tag 'corgi.jpg', class:  'img-circle img-responsive, bubble' %></div>
+</div>
+
+<div class="lower-nav">
+	<ul>
+		<li><div class="button-login"><%= link_to "Sign Up", new_user_registration_path %> </div></li>
+		<li><div class="button-signup"><%= link_to "Sign In", new_user_session_path %></div></li>
+		<li><div class="button-browse">BROWSE</div></li>
+	</ul>
+</div>
+
+<div class="social-bar">
+  <div class="slogan"><h1>connecting good pets with good people.</h1></div>
+  <ul>
+    <li><div class="social-icon"><%= image_tag 'twitter-clear.png' %></div></li>
+    <li><div class="social-icon"><%= image_tag 'facebook-clear.png' %></div></li>
+    <li><div class="social-icon"><%= image_tag 'google-clear.png' %></div></li>
+    <li><div class="social-icon"><%= image_tag 'dotdot-clear.png' %></div></li>
+  </ul>
+
+</div>
+

@@ -11,8 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20150604203854) do
+=======
 
 ActiveRecord::Schema.define(version: 20150602213056) do
+>>>>>>> d32df34dbc5e7b99e5b5cf1e5cce408592b8fbb1
 
   create_table "dogs", force: :cascade do |t|
     t.string   "animal_type"
@@ -40,7 +44,11 @@ ActiveRecord::Schema.define(version: 20150602213056) do
     t.string   "name"
   end
 
+<<<<<<< HEAD
+  create_table "users", force: :cascade do |t|
+=======
   create_table "views", force: :cascade do |t|
+>>>>>>> d32df34dbc5e7b99e5b5cf1e5cce408592b8fbb1
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -55,7 +63,12 @@ ActiveRecord::Schema.define(version: 20150602213056) do
     t.datetime "updated_at",                          null: false
   end
 
+<<<<<<< HEAD
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+=======
   add_index "views", ["email"], name: "index_views_on_email", unique: true
   add_index "views", ["reset_password_token"], name: "index_views_on_reset_password_token", unique: true
+>>>>>>> d32df34dbc5e7b99e5b5cf1e5cce408592b8fbb1
 
 end

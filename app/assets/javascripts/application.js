@@ -17,17 +17,17 @@
 
 
 $(document).ready(function(){
-	$(".logo-fade").hide().delay(1000).fadeIn(5000);
-  $(".bubble-x-sm").hide().delay(500).fadeIn(2700);
-  $(".bubble-sm").hide().delay(1500).fadeIn(3500);
-  $(".bubble-md").hide().delay(1000).fadeIn(5000);
-  $(".bubble-md2").hide().delay(2500).fadeIn(2000);
-  $(".bubble-lg").hide().fadeIn(2500);
+	$(".logo-fade").hide().delay(1500).fadeIn(1000);
+  $(".bubble-x-sm").hide().delay(500).fadeIn(1000);
+  $(".bubble-sm").hide().fadeIn(2500);
+  $(".bubble-md").hide().delay(1000).fadeIn(1500);
+  $(".bubble-md2").hide().delay(1000).fadeIn(1000);
+  $(".bubble-lg").hide().fadeIn(1500);
 
-  $(".button-login").hide().delay(5000).fadeIn(400);
-  $(".button-signup").hide().delay(5000).fadeIn(800);
-  $(".button-browse").hide().delay(5000).fadeIn(1200);
-  $(".social-bar").hide().delay(5000).fadeIn(100);
+  $(".button-login").hide().delay(3000).fadeIn(400);
+  $(".button-signup").hide().delay(3000).fadeIn(800);
+  $(".button-browse").hide().delay(3000).fadeIn(1200);
+  $(".social-bar").hide().delay(3000).fadeIn(100);
 
 
 /////////////////// SLIDER ///////////////////////

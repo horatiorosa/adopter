@@ -27,6 +27,14 @@ body {
   //@include linear-gradient(0deg, #7db9e8, 100%);
 }
 
+h1 {
+  font-size: 2.9em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
 #dog-index-wrapper {
   margin: 5%;
 }
@@ -173,7 +181,31 @@ hr.breakline {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
 
+.adopt-button {
+  font-style: bold;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 3em;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  background: rgba(blue, .3);
+}
 
+.adopt-button:hover {
+  border: 2px solid blue;
+  color: blue;
+  text-shadow: none;
+  background-color: rgba(255,255,255, .2);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;  
+}
 
 
 
@@ -210,7 +242,7 @@ hr.breakline {
   opacity: .6;
 }
 
-.button-login, .button-signup, .button-browse {
+.button-login, .button-signup, .button-browse, .submit-button {
   font-style: bold;
   padding: 5px 12px;
   border: 2px solid white;
@@ -226,7 +258,7 @@ hr.breakline {
    margin-right: 65px;
 }
 
-.button-login:hover, .button-signup:hover, .button-browse:hover {
+.button-login:hover, .button-signup:hover, .button-browse:hover, .submit-button {
   border: 2px solid #FA5882;
   color: #FA5882;
   text-shadow: none;
@@ -244,26 +276,49 @@ hr.breakline {
 
 
 
-
-
 /**=============== BROWSE PAGE ===================**/
 
 
-
-#browse-page {
-  background-color: rgba(255, 255, 255, .6);
+.bio p {
+  text-align: right;
 }
+
+// #browse-page {
+//   background-color: rgba(255, 255, 255, .6);
+// }
 
 .browse-logo {
   background-image: url(images/adoptr-logo.png);
   background-size: cover;
-  width: 100px;
+  width: 150px;
   height: auto;
   display: block;
   text-align: left;
   margin-top: 25px;
   margin-left: 25px;
   z-index: 99;
+}
+
+.social-bar-browse {
+    display: block;
+  text-align: center;
+}
+.social-icon-browse {
+  width: 40px;
+  padding-right: 20px;
+}
+
+.slogan-browse h1 {
+  margin-top: 0px;
+  padding-right: 22px;
+  font-size: 1.6em;
+  font-style: italic;
+  color: white;
+  opacity: .6;
+}
+
+.social-bar-browse li {
+  display: inline-block;
 }
 
 .browse-nav {
@@ -278,9 +333,9 @@ hr.breakline {
 
 .button-yes, .button-no {
   font-style: bold;
-  padding: 5px 20px;
+  padding: 0px 20px 5px 20px;
   border: 2px solid white;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 3em;
   color: white;
   box-shadow: 0px 1px 5px rgba(000,000,000, .6);
@@ -296,12 +351,37 @@ hr.breakline {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
-  -webkit-transition: all 500ms ease-in;
-    -moz-transition: all 500ms ease-in;
-    -ms-transition: all 500ms ease-in;
-    -o-transition: all 500ms ease-in;
-    transition: all 500ms ease-in;  
+  -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;  
 }
+
+
+
+/** ============= ADMIN FORM (DOG.NEW) =========== **/
+
+
+
+.logo-admin-page {
+  background-image: url(images/adoptr-logo.png);
+  background-size: cover;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 45px auto;
+  // position: absolute;
+  // top: 30px;
+  // left: 50px;
+}
+
+.admin-form {
+  margin: 0px auto;
+  width: 50%;
+  max-width: 50%;
+}
+
 
 /** ============= JSSOR SLIDER =========== **/
 /*
@@ -350,7 +430,7 @@ hr.breakline {
   overflow: hidden; 
   left: 0px; 
   top: 0px; 
-  width: 1100px; 
+  width: 1200px; 
   height: 450px;
   border: 5px solid white;
   box-shadow: 0 0 5px rgba(000,000,000, .2);
@@ -360,129 +440,6 @@ hr.breakline {
   width: 100%;
   height: auto;
 }
-
-
-
-/**=============== SEARCH BAR ===================**/
-
-
-// .search-tools {  
-//   $base-border-color: rgba(245, 240, 6, 1);
-//   $base-border-radius: 3px !default;
-//   $base-line-height: 1.5em !default;
-//   $base-spacing: 1.5em !default;
-//   $action-color: #477DCA !default;
-//   $base-link-color: $action-color !default;
-//   //$dark-gray: #333 !default;
-//   $large-screen: em(860) !default;
-//   $base-font-color: $dark-gray !default;
-//   $search-tools-border-color: $base-border-color;
-//   $search-tools-background: lighten($search-tools-border-color, 10%);
-
-
-//   @include clearfix;
-//   background: $search-tools-background;
-//   border-radius: $base-border-radius;
-//   border: 1px solid $search-tools-border-color;
-//   padding: $gutter / 2;
-
-//   ol {
-//     margin: 0;
-//     padding: 0;
-//   }
-
-//   li {
-//     font-size: 0.8em;
-//     line-height: 1.5em;
-//     list-style: none;
-//   }
-
-//   label {
-//     display: block;
-//     font-weight: bold;
-//     margin-bottom: $base-spacing / 4;
-//   }
-
-//   .filter {
-//     margin-bottom: 1em;
-
-//     @include media($large-screen) {
-//       @include span-columns(3.5);
-//       margin-bottom: 0;
-//     }
-
-//      div {
-//       @include box-sizing(border-box);
-//       @include transition(border-color);
-//       background-color: white;
-//       border-radius: $base-border-radius;
-//       border: 1px solid $base-border-color;
-//       font-size: 1em;
-//       margin-bottom: $base-spacing / 2;
-//       padding: ($base-spacing / 3) ($base-spacing / 3);
-//       position: relative;
-//       width: 100%;
-
-//       &:focus,
-//       &:hover {
-//         border-color: darken($base-border-color, 10%);
-//       }
-
-//       label {
-//         cursor: pointer;
-//         font-weight: 400;
-//         margin-bottom: 0;
-//       }
-//     }
-
-//     ol {
-//       margin-top: 1em;
-
-//       label {
-//         display: inline;
-//       }
-//     }
-
-//     button {
-//       @include button(simple, lighten($search-tools-background, 10%));
-//       @include position(absolute, 5px 5px auto auto);
-//       font-size: 0.7em;
-//     }
-
-//     .hide-options {
-//       margin-bottom: 0;
-
-//       ol, button {
-//         display: none;
-//       }
-//     }
-//   }
-
-//   .trigger {
-//     width: 100%;
-
-//     @include media($large-screen) {
-//       @include span-columns(1.5);
-//     }
-
-//     button {
-//       @include button(flat, $action-color);
-//       margin-top: 1em;
-//       padding-bottom: 0.5em;
-//       padding-top: 0.5em;
-//       width: 100%;
-
-//       @include media($large-screen) {
-//         margin-top: 1.55em;
-//       }
-//     }
-//   }
-
-// }
-
-
-
-
 
 
 

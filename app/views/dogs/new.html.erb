@@ -1,49 +1,57 @@
-<h1>Dogs#new</h1>
+<div class="logo-admin-page"><%= image_tag 'adoptr-logo.png' %></div>
+
+
 <% if @dog.errors.any? %>
 		<% @dog.errors.full_messages.each do |error| %>
 			<p style="color: red;"><%= error %></p>
 		<% end %>
 	<% end %>
 
-<%= form_for @dog, :html => { :multipart => true } do |f| %>
+<div class="container">	
+	<div class="row-1">
+		<div class="col-lg-2 col-lg-offset-5 admin-form" style="float:none;">
+			<span style="color: white"><h1>Please enter your dog's information below!</h1></span>
+			<%= form_for @dog, :html => { :multipart => true } do |f| %>
 
-	<div>
-		<%= f.text_field :animal_type, value: "Dog" %>
+				<div>
+					<%= f.text_field :animal_type, value: "Dog" %>
+				</div>
+				<div>
+					<%= f.text_field :name, placeholder: 'Name' %>
+				</div>
+				<div>
+					<%= f.text_field :breed, placeholder: 'Breed' %>
+				</div>
+				<div>
+					<%= f.text_field :sex, placeholder: 'Male/Female' %>
+				</div>
+				<div>
+					<%= f.text_field :size, placeholder: 'Small/Medium/Large' %>
+				</div>
+				<div>
+					<%= f.text_field :age, placeholder: 'Baby/Young/Adult/Senior' %>
+				</div>
+				<div>
+					<%= f.text_area :description, placeholder: 'Description' %>
+				</div>
+				<div>
+					<%= f.text_field :location, value: "New York, NY" %>
+				</div>
+				<div>
+					<%= f.text_field :http, placeholder: 'http' %>
+				</div>
+				<div>
+			  		<%= f.file_field :image1 %>
+			  	</div>
+			  	<div>
+			  		<%= f.file_field :image2 %>
+			  	</div>
+			  	<div>
+			  		<%= f.file_field :image3 %>
+			  	</div>
+			  <!-- 	<div class="submit-button"> -->
+			  		<%= f.submit 'submit!' %>
+			  <!-- 	</div> -->
+			<% end %>
+		</div>
 	</div>
-	<div>
-		<%= f.text_field :name, placeholder: 'Name' %>
-	</div>
-	<div>
-		<%= f.text_field :breed, placeholder: 'Breed' %>
-	</div>
-	<div>
-		<%= f.text_field :sex, placeholder: 'Male/Female' %>
-	</div>
-	<div>
-		<%= f.text_field :size, placeholder: 'Small/Medium/Large' %>
-	</div>
-	<div>
-		<%= f.text_field :age, placeholder: 'Baby/Young/Adult/Senior' %>
-	</div>
-	<div>
-		<%= f.text_area :description, placeholder: 'Description' %>
-	</div>
-	<div>
-		<%= f.text_field :location, value: "New York, NY" %>
-	</div>
-	<div>
-		<%= f.text_field :http, placeholder: 'http' %>
-	</div>
-	<div>
-  		<%= f.file_field :image1 %>
-  	</div>
-  	<div>
-  		<%= f.file_field :image2 %>
-  	</div>
-  	<div>
-  		<%= f.file_field :image3 %>
-  	</div>
-  	<div>
-  		<%= f.submit %>
-  	</div>
-<% end %>

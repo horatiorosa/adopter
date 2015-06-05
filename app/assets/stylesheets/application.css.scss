@@ -20,3 +20,424 @@
 @import "base/base";
 
 
+
+body {
+  height: 125vh;
+  @include linear-gradient(to top, #82F9C0, #0354CB);
+  //@include linear-gradient(0deg, #7db9e8, 100%);
+}
+
+h1 {
+  font-size: 2.9em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+#dog-index-wrapper {
+  margin: 5%;
+}
+
+/** ================ WELCOME PAGE ================= **/
+
+.logo {
+  background-image: url(images/adoptr-logo.png);
+  background-size: cover;
+  width: 300px;
+  height: auto;
+  display: block;
+  text-align: left;
+  margin-top: 45px;
+  margin-left: 50px;
+  // position: absolute;
+  // top: 30px;
+  // left: 50px;
+  z-index: 99;
+}
+// .profile-logo {
+//   margin-bottom: 150px;
+// }
+
+.bubble-x-sm {
+  width: 5%;
+  max-width: 5%;
+}
+
+.bubble-sm {
+  width: 9%;
+  max-width: 9%;
+}
+
+.bubble-md {
+  width: 12%;
+  max-width: 12%;
+}
+
+.bubble-md2 {
+  width: 17.5%;
+  max-width: 17.5%;
+}
+
+.bubble-lg {
+  width: 24%;
+  max-width: 24%;
+}
+
+ .bubble {
+  border-radius: 100%;
+  border: 5px solid white;
+  box-shadow: 0px 0px 15px 0px rgba(000,000,000, .5)
+  
+}
+
+.bubble-box {
+  // display: flex;
+  // flex-direction: row-reverse;
+  // align-items: center;
+  margin: 0px auto;
+  text-align: center;
+  height: 65vh;
+  width: 75%;
+
+}
+
+/** betty **/
+.bubble1 {
+  top: 170px;
+  left: 140px;
+  position: absolute;
+}
+
+/** brownie **/
+.bubble2 {
+  top: 200px;
+  left: 290px;
+  position: absolute;
+}
+
+/** skylar **/
+.bubble3 {
+  top: 170px;
+  left: 500px;
+  position: absolute;
+  z-index: 98;
+}
+
+/** petra **/
+.bubble4 {
+  top: 190px;
+  right: 320px;
+  position: absolute;
+}
+
+/** ros **/
+.bubble5 {
+  top: 200px;
+  right: 140px;
+  position: absolute;
+  z-index: 99;
+}
+
+/** corgi **/
+.bubble6 {
+  top: 120px;
+  right: 65px;
+  position: absolute;
+}
+
+
+/**============= DOG INDEX ================================**/
+
+.progress {
+  height: 30px;
+  border-radius:0px;
+  background:transparent; 
+  -webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 inset;
+  margin-bottom:15px;
+}
+
+.bar {
+  height:35px;
+  font-size:16px;
+  line-height: 30px;
+  background: #FA5882;   
+  -webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 inset;
+  text-shadow: none;
+  text-align:left;
+  padding-left: 16px;
+  color: white;
+}
+
+// .stats {
+//   background-color: rgba(255,255,255, .6);
+//   padding: 20px 10px;
+//   border-radius: 3px;
+// }
+
+hr.breakline {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+.adopt-button {
+  font-style: bold;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 3em;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  background: rgba(blue, .3);
+}
+
+.adopt-button:hover {
+  border: 2px solid blue;
+  color: blue;
+  text-shadow: none;
+  background-color: rgba(255,255,255, .2);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;  
+}
+
+
+
+/** =====  LOWER NAV ============ **/
+
+.lower-nav, .social-bar {
+  display: block;
+  text-align: center;
+}
+
+.lower-nav li, .social-bar li {
+  display: inline-block;
+}
+
+.social-bar {
+  margin-top: 115px;
+}
+.social-icon {
+  width: 53px;
+  padding-right: 22px;
+}
+
+.social-icon:hover {
+  opacity: .8;
+}
+
+.slogan h1 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-right: 22px;
+  font-size: 1.6em;
+  font-style: italic;
+  color: white;
+  opacity: .6;
+}
+
+.button-login, .button-signup, .button-browse, .submit-button {
+  font-style: bold;
+  padding: 5px 12px;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 1.8em;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  background: rgba(black, 0);
+}
+
+.button-login, .button-signup {
+   margin-right: 65px;
+}
+
+.button-login:hover, .button-signup:hover, .button-browse:hover, .submit-button {
+  border: 2px solid #FA5882;
+  color: #FA5882;
+  text-shadow: none;
+  background-color: rgba(255,255,255, .4);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+-webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;  
+}
+
+
+
+
+/**=============== BROWSE PAGE ===================**/
+
+
+.bio p {
+  text-align: right;
+}
+
+// #browse-page {
+//   background-color: rgba(255, 255, 255, .6);
+// }
+
+.browse-logo {
+  background-image: url(images/adoptr-logo.png);
+  background-size: cover;
+  width: 150px;
+  height: auto;
+  display: block;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  z-index: 99;
+}
+
+.social-bar-browse {
+    display: block;
+  text-align: center;
+}
+.social-icon-browse {
+  width: 40px;
+  padding-right: 20px;
+}
+
+.slogan-browse h1 {
+  margin-top: 0px;
+  padding-right: 22px;
+  font-size: 1.6em;
+  font-style: italic;
+  color: white;
+  opacity: .6;
+}
+
+.social-bar-browse li {
+  display: inline-block;
+}
+
+.browse-nav {
+  display: block;
+  text-align: center;
+}
+
+.browse-nav li {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.button-yes, .button-no {
+  font-style: bold;
+  padding: 0px 20px 5px 20px;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 3em;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  background: rgba(white, .6);
+}
+
+.button-yes:hover, .button-no:hover {
+  border: 2px solid #FA5882;
+  color: #FA5882;
+  text-shadow: none;
+  background-color: rgba(255,255,255, .4);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;  
+}
+
+
+
+/** ============= ADMIN FORM (DOG.NEW) =========== **/
+
+
+
+.logo-admin-page {
+  background-image: url(images/adoptr-logo.png);
+  background-size: cover;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 45px auto;
+  // position: absolute;
+  // top: 30px;
+  // left: 50px;
+}
+
+.admin-form {
+  margin: 0px auto;
+  width: 50%;
+  max-width: 50%;
+}
+
+
+/** ============= JSSOR SLIDER =========== **/
+/*
+.jssora21l                  (normal)
+.jssora21r                  (normal)
+.jssora21l:hover            (normal mouseover)
+.jssora21r:hover            (normal mouseover)
+.jssora21l.jssora21ldn      (mousedown)
+.jssora21r.jssora21rdn      (mousedown)
+*/
+
+.jssora21l, .jssora21r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url(../img/a21.png) center center no-repeat;
+    overflow: hidden;
+}
+.jssora21l { background-position: -3px -33px; }
+.jssora21r { background-position: -63px -33px; }
+.jssora21l:hover { background-position: -123px -33px; }
+.jssora21r:hover { background-position: -183px -33px; }
+.jssora21l.jssora21ldn { background-position: -243px -33px; }
+.jssora21r.jssora21rdn { background-position: -303px -33px; }
+
+/**  ADDL SLIDER CODE  **/
+
+#slider1_container {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 100%; 
+  height: 320px;
+  position: relative; 
+  top: 0px; 
+  left: 0px; 
+  width: 900px;; 
+  height: 450px;
+}
+
+.slides {
+  cursor: move; 
+  position: absolute; 
+  overflow: hidden; 
+  left: 0px; 
+  top: 0px; 
+  width: 1200px; 
+  height: 450px;
+  border: 5px solid white;
+  box-shadow: 0 0 5px rgba(000,000,000, .2);
+}
+
+.img-full-width {
+  width: 100%;
+  height: auto;
+}
+

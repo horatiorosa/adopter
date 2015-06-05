@@ -18,10 +18,10 @@
 
 $(document).ready(function(){
 	$(".logo-fade").hide().delay(1500).fadeIn(1000);
-  $(".bubble-x-sm").hide().delay(500).fadeIn(1000);
+  $(".bubble-x-sm").hide().delay(1500).fadeIn(1000);
   $(".bubble-sm").hide().fadeIn(2500);
   $(".bubble-md").hide().delay(1000).fadeIn(1500);
-  $(".bubble-md2").hide().delay(1000).fadeIn(1000);
+  $(".bubble-md2").hide().delay(1000).fadeIn(2500);
   $(".bubble-lg").hide().fadeIn(1500);
 
   $(".button-login").hide().delay(3000).fadeIn(400);
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 
 
-  var options = { $AutoPlay: true };
+  var options = { $AutoPlay: true};
   var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 
   var options = {
@@ -54,21 +54,20 @@ $(document).ready(function(){
 	{ code3 }
 	];
 	var options = {
-	    $AutoPlay: true,
+	 
 	    $SlideshowOptions: {
 	            $Class: $JssorSlideshowRunner$,
 	            $Transitions: _SlideshowTransitions,
 	            $TransitionsOrder: 1,
-	            $ShowLink: true
-	        }
+	            $ShowLink: true,    
+	        }  
 	};
+
 	var jssor_slider1 = new $JssorSlider$('slider1_container', options);
  
  var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 
 var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-
-
 
 
 });

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :dogs
-  devise_for :views
+  # devise_for :views
 
   get '/dogs', to: 'dogs#index'
 

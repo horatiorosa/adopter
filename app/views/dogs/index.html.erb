@@ -5,30 +5,25 @@
   <script src="../../assets/javascripts/jssor.slider.mini.js"></script>
 </head>
   
- <div class="browse-logo"><%= image_tag 'adoptr-logo.png' %></div>
- <div class="social-bar-browse">
-  <div class="slogan-browse"><h1>connecting good pets with good people.</h1></div>
+<div class="browse-logo"><%= image_tag 'adoptr-logo.png' %></div>
+<div class="social-bar-browse"> 
   <ul>
     <li><div class="social-icon"><%= image_tag 'twitter-clear.png' %></div></li>
     <li><div class="social-icon"><%= image_tag 'facebook-clear.png' %></div></li>
     <li><div class="social-icon"><%= image_tag 'google-clear.png' %></div></li>
     <li><div class="social-icon"><%= image_tag 'dotdot-clear.png' %></div></li>
   </ul>
-</div>
+  <div class="slogan-browse"><h1>connecting good pets with good people.</h1></div>
 </div>
 <hr class="breakline">
 
-<div id="browse-page" class="container-fluid">
+<div id="browse-page" class="container-fluid">  
   <div class="row-1 col-md-12">
   
       <div id="slider1_container">
         <!-- Slides Container -->
         <div u="slides" class="slides">
-        <% @dog.all.order(created_at: :desc).first(3).each do |dog| %>
-        <div>
-          <p><%= link_to (dog.name), dog_path(dog.id) %></p>
-          <%= image_tag @dog.image1.url(:medium) %>
-          <% end %>
+        
           
           <div class="img-responsive"><%= image_tag "skylar-carousel.png" %></div>
           <div class="img-responsive"><%= image_tag "skylar-carousel2.png" %></div>

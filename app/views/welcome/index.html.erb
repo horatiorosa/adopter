@@ -1,4 +1,5 @@
 
+
   <div class="logo logo-fade"><%= image_tag 'adoptr-logo.png' %></div>
 
 
@@ -13,8 +14,8 @@
 
 <div class="lower-nav">
 	<ul>
-		<li><div class="button-login">LOGIN</div></li>
-		<li><div class="button-signup">SIGN UP</div></li>
+		<li><div class="button-login"><%= link_to "Sign Up", new_user_registration_path %> </div></li>
+		<li><div class="button-signup"><%= link_to "Sign In", new_user_session_path %></div></li>
 		<li><div class="button-browse">BROWSE</div></li>
 	</ul>
 </div>
@@ -28,4 +29,3 @@
     <li><div class="social-icon"><%= image_tag 'dotdot-clear.png' %></div></li>
   </ul>
 </div>
-

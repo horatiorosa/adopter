@@ -13,6 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150602213056) do
 
+
   create_table "dogs", force: :cascade do |t|
     t.string   "animal_type"
     t.string   "breed"
@@ -39,7 +40,9 @@ ActiveRecord::Schema.define(version: 20150602213056) do
     t.string   "name"
   end
 
+
   create_table "views", force: :cascade do |t|
+
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"

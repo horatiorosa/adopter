@@ -16,7 +16,8 @@
 	<ul>
 
 		<li><div class="button-login"><%= link_to "Sign Up", new_user_registration_path %> </div></li>
-		<li><div class="button-signup"><%= link_to "Sign In", new_user_session_path %></div></li>
+		<li><div class="button-signup"><%= link_to "Sign In", new_user_session_path %>
+     
 		<li><div class="button-browse"><%= link_to "BROWSE", dogs_path %></div></li>
 
 </div>
@@ -28,5 +29,9 @@
     <li><div class="social-icon"><%= image_tag 'facebook-clear.png' %></div></li>
     <li><div class="social-icon"><%= image_tag 'google-clear.png' %></div></li>
     <li><div class="social-icon"><%= image_tag 'dotdot-clear.png' %></div></li>
+     <% if signed_in? %>
+    <li><div class="button-signup"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></div></li>
+    <% end %>
   </ul>
+
 </div>

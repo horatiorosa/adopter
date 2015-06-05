@@ -35,9 +35,120 @@ p {
   font-size: 1.5em;
 }
 
+a {
+   text-decoration: none !important;
+   color: white !important;
+}
+
+a:hover {
+  color: #FA5882 !important;
+}
+
+.override {
+  color: white !important;
+}
+
 #dog-index-wrapper {
   margin: 5%;
 }
+
+
+
+
+/** =========== BUTTONS ===============**/
+
+.button-login, .button-signup, .button-browse, .submit-button {
+  font-style: bold;
+  padding: 5px 12px;
+  border: 2px solid white !important;
+  border-radius: 4px;
+  font-size: 1.8em;
+  color: white !important;
+  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  background: rgba(black, 0);
+}
+
+.button-login, .button-signup {
+   margin-right: 65px;
+}
+
+.button-login:hover, .button-signup:hover, .button-browse:hover, .submit-button {
+  border: 2px solid #FA5882 !important;
+  color: #FA5882 !important;
+  text-shadow: none;
+  background-color: rgba(255,255,255, .4) !important;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;  
+}
+
+.button-yes, .button-no {
+  font-style: bold;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 100px;
+  font-size: 8em;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  background: rgba(white, .6);
+}
+
+
+.button-no {
+  padding: 20px 28px;
+}
+
+.button-yes:hover, .button-no:hover {
+  border: 2px solid #FA5882;
+  color: #FA5882;
+  text-shadow: none;
+  background-color: rgba(255,255,255, .4);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;  
+}
+
+.adopt-button {
+  font-style: bold;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 3em;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
+  background: rgba(blue, .3);
+}
+
+.adopt-button:hover {
+  border: 2px solid blue;
+  color: blue;
+  text-shadow: none;
+  background-color: rgba(255,255,255, .2);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;  
+}
+
+
+
+
 
 /** ================ WELCOME PAGE ================= **/
 
@@ -186,32 +297,6 @@ hr.breakline {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
 
-.adopt-button {
-  font-style: bold;
-  border: 2px solid white;
-  border-radius: 4px;
-  font-size: 3em;
-  color: white;
-  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
-  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
-  background: rgba(blue, .3);
-}
-
-.adopt-button:hover {
-  border: 2px solid blue;
-  color: blue;
-  text-shadow: none;
-  background-color: rgba(255,255,255, .2);
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  -webkit-transition: all 500ms ease-in;
-    -moz-transition: all 500ms ease-in;
-    -ms-transition: all 500ms ease-in;
-    -o-transition: all 500ms ease-in;
-    transition: all 500ms ease-in;  
-}
-
 
 
 /** =====  LOWER NAV ============ **/
@@ -245,37 +330,6 @@ hr.breakline {
   font-style: italic;
   color: white;
   opacity: .6;
-}
-
-.button-login, .button-signup, .button-browse, .submit-button {
-  font-style: bold;
-  padding: 5px 12px;
-  border: 2px solid white;
-  border-radius: 4px;
-  font-size: 1.8em;
-  color: white;
-  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
-  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
-  background: rgba(black, 0);
-}
-
-.button-login, .button-signup {
-   margin-right: 65px;
-}
-
-.button-login:hover, .button-signup:hover, .button-browse:hover, .submit-button {
-  border: 2px solid #FA5882;
-  color: #FA5882;
-  text-shadow: none;
-  background-color: rgba(255,255,255, .4);
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
--webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -ms-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;  
 }
 
 
@@ -334,33 +388,6 @@ hr.breakline {
 .browse-nav li {
   display: inline-block;
   padding-right: 50px;
-}
-
-.button-yes, .button-no {
-  font-style: bold;
-  padding: 0px 20px 5px 20px;
-  border: 2px solid white;
-  border-radius: 6px;
-  font-size: 3em;
-  color: white;
-  box-shadow: 0px 1px 5px rgba(000,000,000, .6);
-  text-shadow: 0px 1px 5px rgba(000,000,000, .6);
-  background: rgba(white, .6);
-}
-
-.button-yes:hover, .button-no:hover {
-  border: 2px solid #FA5882;
-  color: #FA5882;
-  text-shadow: none;
-  background-color: rgba(255,255,255, .4);
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    transition: all 200ms ease-in;  
 }
 
 

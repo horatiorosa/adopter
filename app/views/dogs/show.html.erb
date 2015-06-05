@@ -53,7 +53,7 @@
 
 <div class="row-2">
   <div class="col-md-6">
-    <div class="lead"><h1>About<%= dog.name %></h1></div>
+    <div class="lead"><h1>About <%= @dog.name %></h1></div>
       <div id="dog_pro">
           <p>
           <%= @dog.animal_type %>
@@ -63,7 +63,7 @@
           <%= @dog.location %>
           <%= @dog.description %>
         </p>
-        <p><%= link_to "Adopt Me", @dog.http %></p>
+        <p id="zoom"><%= link_to "Adopt Me", @dog.http %></p>
       </div>
   </div>
 </div>
